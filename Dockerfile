@@ -1,6 +1,6 @@
 FROM node:16.14.0-alpine3.15
-MAINTAINER YIN
-ADD lottery.tar.gz  /
+# MAINTAINER YIN
+# ADD lottery.tar.gz  /
 WORKDIR /lottery
 RUN chown -R root /lottery && sed -i '/openBrowser/ d' ./server/server.js \
 && cd server && npm install \
