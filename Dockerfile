@@ -7,5 +7,5 @@ RUN chown -R root /lottery && sed -i '/openBrowser/ d' ./server/server.js \
 && cd ../product && npm install \
 && npm run build
 EXPOSE 8888
-WORKDIR /lottery/product
+WORKDIR /lottery-main/product
 CMD ["npm", "run", "serve"]
