@@ -4,8 +4,8 @@ FROM node:16.14.0-alpine3.15
 WORKDIR /lottery
 COPY . /lottery
 RUN chown -R root /lottery && sed -i '/openBrowser/ d' ./server/server.js \
-&& cd server && npm install
-RUN cd /lottery/product && ls -l && npm install \
+&& cd server && npm install \
+&& cd ../product && npm install \
 && npm run build
 EXPOSE 8888
 WORKDIR /lottery/product
