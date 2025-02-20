@@ -5,7 +5,7 @@ WORKDIR /lottery
 COPY . /lottery
 RUN chown -R root /lottery && sed -i '/openBrowser/ d' ./server/server.js \
 && cd server && npm install \
-&& cd ../product && npm install \
+&& cd ./lottery/product && npm install \
 && npm run build
 EXPOSE 8888
 # WORKDIR /lottery/product
