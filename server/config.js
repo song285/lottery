@@ -65,7 +65,7 @@ const EACH_COUNT = [1, 1, 1, 2, 10, 21, 21];
 /**
  * 卡片公司名称标识
  */
-const COMPANY = "快快网络";
+const COMPANY = "SONGGUO";
 
 module.exports = {
   prizes,
